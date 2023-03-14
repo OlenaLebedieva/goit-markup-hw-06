@@ -61,7 +61,7 @@
         </div>
       </section>
       <!-- Modal window -->
-      <div data-modal class="backdrop "> <!--повернути клас хіден -->
+      <div data-modal class="backdrop visually-hidden">
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
            <svg class="modal-icon">
@@ -74,24 +74,41 @@
     <div class="form-field">
       <label for="name" class="form-label">Name</label>
       <input type="text" name="name" class="form-input"  required>
+    <div class="icon-box">
+      <svg class="icon-field">
+      <use href="./Images/icons.svg#person"></use>
+      </svg>
+    </div>
     </div>
     <div class="form-field">
       <label for="tel" class="form-label">Phone</label>
       <input type="text" name="name" class="form-input"  required>
+      <div class="icon-box">
+      <svg class="icon-field">
+      <use href="./Images/icons.svg#phone"></use>
+      </svg>
+    </div>
     </div>
     <div class="form-field">
       <label for="mail" class="form-label">Email</label>
       <input type="email" name="mail" class="form-input"  required>
+      <div class="icon-box">
+      <svg class="icon-field">
+      <use href="./Images/icons.svg#Vector"></use>
+      </svg>
+    </div>
     </div>
     <div class="form-field">
       <label for="comment" class="form-label">Comment</label>
-      <textarea  class="form-input comment" name="comment" id="comment" rows="6" placeholder="Text input">
-      </textarea>
+      <textarea  class="form-input comment" name="comment" id="comment" rows="6" placeholder="Text input"></textarea>
     </div>
     <label class="form-checkbox">
-      <input class="form-agreement visually-hidden" type="checkbox" name="agreement" required >
+      <input class="form-agreement-box visually-hidden" type="checkbox" name="agreement" required >
+      <span class="checkbox-icon"></span>
+      <span class="checkbox-text">I accept the terms and conditions of the</span>
+      <a href="#" class="checkbox-link">Privacy Policy</a>
     </label>
-
+<button class="form-button" type="submit" >Send</button>
   </form>
       </div>
       </div>
@@ -447,6 +464,17 @@
             </li>
           </ul>
         </div>
+      <div class="subscribe-box">
+        <p class="text">Subscribe</p>
+        <form class="subscribe-form">
+        <input class="subscribe-input" type="email" name="E-mail" placeholder="E-mail">
+        <button class="subscribe-button" type="submit">Subscribe
+          <svg class="subscribe-icon">
+            <use href="./Images/icons.svg#Frame-3"></use>
+          </svg>
+        </button>
+        </form>
+      </div>
       </div>
     </footer>
    <script src="./js/modal.js"></script>
