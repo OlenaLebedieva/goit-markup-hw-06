@@ -233,7 +233,7 @@ a.current::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--modal-background-color);
+  background-color: rgba(46, 47, 66, 0.4);
   transition: visibility 500ms, opacity 500ms;
 }
 
@@ -253,7 +253,7 @@ a.current::after {
   height: 579px;
   padding: 24px;
 
-  background: #fcfcfc;
+  background: var(--modal-background-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -275,10 +275,18 @@ a.current::after {
   transition: visibility 500ms, opacity 500ms;
 }
 
+/* .modal-icon {
+  width: 8px;
+  height: 8px;
+} */
+
 .modal-close:hover,
-.modal-close:focus {
+.modal-close:focus,
+.modal-icon:hover,
+.modal-icon:focus {
   background-color: var(--button-accent-color);
   border-color: var(--button-accent-color);
+  fill: white;
 }
 
 .form-title {
